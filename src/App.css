@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -15,10 +16,10 @@ body {
   color: #2b80aa;
 }
 .purple {
-  color: #8E82DB;
+  color: #587de4;
 }
 main {
-  background-color: #DFC3EF;
+  background-color: #486fd1;
   height: 80vh;
   width: 100%;
   display: flex;
@@ -27,7 +28,7 @@ main {
 }
 .calculatorWrapper {
   height: max-content;
-  background-color: #001E34;
+  background-color: #26429c;
   max-width: 350px;
   min-width: 300px;
   border-radius: 12px;
@@ -87,7 +88,7 @@ main {
 }
 button {
   width: 30%;
-  background-color: #002B4A;
+  background-color: #00204a;
   /* background-color: #001E34; */
   padding: 1rem 0.2rem;
   border: none;
@@ -97,6 +98,6 @@ button {
   border-radius: 4px;
 }
 button:hover {
-  background-color: #0b08bf;
+  background-color: #1e1bc3;
   color: #fff;
 }

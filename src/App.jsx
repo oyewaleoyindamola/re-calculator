@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import useInputs from "./useGatherInputFields";
+import useInputs from "./UseInputs";
 function App() {
   const [inputDatas, setInputDatas] = useState();
   const { setEventInputs } = useInputs(setInputDatas);
@@ -33,7 +33,14 @@ function App() {
               >
                 C
               </button>
-              <button type="button" value="<" className="green btn">
+              <button
+                type="button"
+                value="<"
+                className="green btn"
+                onClick={(e) => {
+                  setEventInputs(e.target.value, "<");
+                }}
+              >
                 &lt;
               </button>
               <button
@@ -88,7 +95,14 @@ function App() {
               >
                 9
               </button>
-              <button type="button" value="-" className="purple btn">
+              <button
+                type="button"
+                value="-"
+                className="purple btn"
+                onClick={(e) => {
+                  setEventInputs(e.target.value, "minus");
+                }}
+              >
                 -
               </button>
             </div>
@@ -197,7 +211,7 @@ function App() {
                   id="equal"
                   value="="
                   onClick={() => {
-                    setEventInputs(eval(inputDatas));
+                    // setEventInputs(eval(setInputDatas));
                   }}
                   className="green"
                 >
